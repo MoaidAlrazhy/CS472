@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muayad - Home</title>
+
+    <style>
+
+
+        .bg-gradient-primary {
+            background-size: cover;
+            background: linear-gradient(90deg, #4e73df 0%, #224abe 100%);
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .w-150 {
+            width: 150px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .p-5 {
+            padding: 50px;
+        }
+
+        .mb-2 {
+            margin-bottom: 20px;
+        }
+
+        .list-group {
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            border-radius: 0.25rem;
+        }
+
+        .list-group-item {
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 0.25rem;
+        }
+
+        .list-group-item a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .list-group-item:hover {
+            background: linear-gradient(90deg, #4e73df 0%, #224abe 100%);
+        }
+
+        .list-group-item:hover a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+        }
+
+        .shadow {
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-white {
+            background-color: #fff;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .border-radius-1 {
+            border-radius: 0.25rem;
+        }
+
+        .mx-5 {
+            margin-left: 1.25rem;
+            margin-right: 1.25rem;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .my-1 {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .p-1 {
+            padding: 10px;
+        }
+
+        .text-gradiant-animation {
+            background: linear-gradient(90deg, #4e73df 0%, #224abe 100%);
+            background-size: 200% auto;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: textGradiant 5s linear infinite;
+        }
+
+        @keyframes textGradiant {
+            0% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: -100% 0;
+            }
+        }
+
+        .bg-gradient-animation {
+            background: linear-gradient(90deg, #4e73df 0%, #0e3abb 100%);
+            background-size: 200% auto;
+            animation: gradient 5s linear infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="text-center p-5 d-flex mb-2  bg-gradient-animation text-white border-radius-1 align-items-center">
+    <img src="./images/muayad.png" alt="Muayad" class="rounded-circle w-150  shadow bg-white">
+    <div class="mx-5 text-left">
+        <h3 class="my-1">Muayad Alrazehi</h3>
+        <p class="my-1"> Student ID: 616988</p>
+    </div>
+</div>
+
+<h2 class="text-center text-gradiant-animation"> MIU - WAP - Labs - DE2024-7</h2>
+<ul class="list-group">
+    <li class="list-group-item"><a href="#">W1D1 - HomePage</a></li>
+</ul>
+
+<footer class="text-center p-1 bg-gradient-primary border-radius-1 text-white">
+    <p>&copy; 2024 Muayad Alrazehi</p>
+</footer>
+</body>
+</html>
