@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design - Grid</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-header {
+            background-color: #add8e6; /* lightblue */
+        }
+
+        .custom-nav {
+            background-color: #2f4f4f; /* darkslategray */
+        }
+
+        .custom-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            border-right: 1px solid black;
+        }
+
+        .custom-footer {
+            background-color: #2f4f4f; /* darkslategray */
+            color: white;
+        }
+
+        .col1 {
+            background-color: #cccccc; /* lightgray */
+        }
+
+        .col2 {
+            background-color: #bbbbbb; /* gray */
+        }
+
+        .col3 {
+            background-color: #cccccc; /* lightgray */
+        }
+
+        section > div {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="custom-header text-center font-weight-bold py-3">
+    Header
+</header>
+
+<nav class="custom-nav">
+    <div class="row text-center col-6 col-md-3">
+        <a href="#" class="col-4 py-3 border-right border-dark">Menu1</a>
+        <a href="#" class="col-4 py-3 border-right border-dark">Menu2</a>
+        <a href="#" class="col-4 py-3 border-right border-dark">Menu3</a>
+    </div>
+</nav>
+
+<section>
+    <div class="row">
+        <div class="col-md-4 col-6 col1 p-3">
+            Column 1
+        </div>
+        <div class="col-md-4 col-6 col2  p-3">
+            Column 2
+        </div>
+        <div class="col-md-4 col col3 p-3">
+            Column 3
+        </div>
+    </div>
+</section>
+
+<footer class="custom-footer text-center font-weight-bold py-3">
+    Footer
+</footer>
+
+
+</body>
+</html>

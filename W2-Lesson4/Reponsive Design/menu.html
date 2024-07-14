@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+
+        h2 {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 4px;
+            transition:  transform .3s;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: transform 5s;
+        }
+
+        h2:hover {
+            background: linear-gradient(90deg, #4e73df 0%, #224abe 100%);
+            color: white;
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        h2:hover a {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<h1>Responsive Design</h1>
+<p> Lesson 4 Lab : Create an HTML page with CSS to match the following website design. Your design should be responsive
+    and change to the layout shown in the second figure when the screen is less than 600px. Implement the
+    design first using floats for the columns and menu, then using flexbox, then using grid for the entire
+    layout. EC: Also use Bootstrap’s grid for the entire layout. Your mumstudents.org page should have
+    links to each of the different solutions. </p>
+
+
+<h2>
+    <a href="./floats.html"> Solution 1: Floats</a>
+</h2>
+<h2>
+
+    <a href="./flexbox.html">Solution 2: Flexbox</a>
+</h2>
+<h2>
+
+    <a href="./grid.html"> Solution 3: Grid</a>
+</h2>
+<h2>
+
+    <a href="./bootstrap.html"> Solution 4: Bootstrap</a>
+</h2>
+
+
+</body>
+</html>

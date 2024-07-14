@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design - Floats</title>
+</head>
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: #add8e6;
+        padding: 30px;
+        font-weight: bold;
+        font-size: 18pt
+    }
+
+    nav {
+        text-align: start;
+        background: #2f4f4f;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+        border-right: 1px solid black;
+        float: left;
+    }
+
+    header {
+        text-align: center;
+    }
+
+
+    .clear {
+        clear: both;
+    }
+
+    section {
+        height: 300px;
+    }
+
+    section > div:nth-child(1) {
+        width: 30%;
+        background-color: #cccccc;
+        float: left;
+    }
+
+    section > div:nth-child(2) {
+        width: 40%;
+        background-color: #bbbbbb;
+        float: left;
+    }
+
+    section > div:nth-child(3) {
+        width: 30%;
+        background-color: #cccccc;
+        float: left;
+    }
+
+    section > div {
+        height: 300px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    footer {
+        background: #2f4f4f;
+        padding: 30px;
+        font-weight: bold;
+        font-size: 18pt;
+        text-align: center;
+        color: white;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        section > div:nth-child(1) {
+            width: 50%;
+        }
+
+        section > div:nth-child(2) {
+            width: 50%;
+            float: right;
+        }
+
+        section > div:nth-child(3) {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+
+<header>
+    Header
+</header>
+
+<nav>
+    <a href="">Menu1</a>
+    <a href="">Menu2</a>
+    <a href="">Menu3</a>
+    <div class="clear"></div>
+</nav>
+
+<section>
+    <div class="col1">
+        Column 1
+    </div>
+    <div class="col2">
+        Column 2
+    </div>
+    <div class="col3">
+        Column 3
+    </div>
+</section>
+
+<footer>
+    Footer
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design - Grid</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: #add8e6;
+        padding: 30px;
+        font-weight: bold;
+        font-size: 18pt;
+        text-align: center;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 140px 140px 140px;
+        background: #2f4f4f;
+        text-align: start;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        border-right: 1px solid black;
+        text-align: center;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        height: 300px;
+    }
+
+    section > div {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .col1 {
+        background-color: #cccccc;
+    }
+
+    .col2 {
+        background-color: #bbbbbb;
+    }
+
+    .col3 {
+        background-color: #cccccc;
+    }
+
+    footer {
+        background: #2f4f4f;
+        padding: 30px;
+        font-weight: bold;
+        font-size: 18pt;
+        text-align: center;
+        color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+        section {
+            grid-template-columns: 50% 50%;
+        }
+
+        .col3 {
+            grid-column: 1 / span 2;
+        }
+    }
+</style>
+<body>
+
+<header>
+    Header
+</header>
+
+<nav>
+    <a href="">Menu1</a>
+    <a href="">Menu2</a>
+    <a href="">Menu3</a>
+</nav>
+
+<section>
+    <div class="col1">
+        Column 1
+    </div>
+    <div class="col2">
+        Column 2
+    </div>
+    <div class="col3">
+        Column 3
+    </div>
+</section>
+
+<footer>
+    Footer
+</footer>
+
+</body>
+</html>
