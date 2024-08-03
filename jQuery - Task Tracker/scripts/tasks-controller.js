@@ -95,9 +95,11 @@ tasksController = function () {
 
 
                 $(taskPage).find('#tblTasks tbody').on('click', '.loadRow', function (evt) {
+                    // show form if hidden
+                    $(taskPage).find('#taskCreation').removeClass('not');
                     $(taskPage).find('form').fromObject(
                         {
-                            task: 'test task',
+                            task: `wap test task`,
                             category: 'Personal',
                             requiredBy: Date.today().add(1).days().toString('yyyy-MM-dd'),
                             completed: false
