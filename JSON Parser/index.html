@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts by User</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1, h2 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        input:focus, button:hover {
+            outline: none;
+            background: linear-gradient(90deg, #2193b0, #6dd5ed);
+        }
+        .post {
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .post:hover {
+            transform: translateY(-10px);
+        }
+        .comments {
+            max-height: 200px;
+            overflow-y: auto;
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+            border-left: 2px solid #fff;
+        }
+
+        .comments::-webkit-scrollbar {
+           display: none;
+        }
+        button.show-comments {
+            margin-top: 10px;
+            background: linear-gradient(90deg, #007991, #78ffd6);
+            transition: all 0.3s ease;
+        }
+        button.show-comments:hover {
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+            transition: all 0.3s ease;
+        }
+
+        #posts {
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        #posts::-webkit-scrollbar {
+           display: none;
+        }
+
+        .comment {
+            background: rgba(255, 255, 255, 0.1);
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Blog Posts</h1>
+    <label for="userId">Enter User ID:</label>
+    <input type="number" id="userId" placeholder="Enter User ID">
+    <button id="fetchUser">Get Posts</button>
+
+    <div id="userInfo"></div>
+    <div id="posts"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
